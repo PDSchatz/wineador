@@ -1,0 +1,30 @@
+{
+  "name": "wineador-api",
+  "version": "1.0.0",
+  "description": "A server that does wine stuff ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "wine",
+    "api",
+    "wineador",
+    "rose",
+    "cabernet"
+  ],
+  "author": "Douglas Schatz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.1",
+    "mongoose": "6.4.6",
+    "dotenv": "16.0.1",
+    "bcryptjs": "2.4.3",
+    "jsonwebtoken": "8.5.1" 
+  },
+  "devDependencies": {
+    "nodemon": "2.0.19"
+  }
+}
