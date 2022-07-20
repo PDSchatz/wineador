@@ -4,11 +4,18 @@ const Express = require('express'),
       mongoose = require('mongoose'),
       app = Express(),
       PORT = process.env.PORT || 4000,
-      HOST = process.end.HOST || "127.0.0.1",
+      HOST = process.env.HOST || "127.0.0.1",
       db = require("./db")
 
+app.use(cors())
+app.use(Express.json())
+
 app.listen(PORT, HOST, () => {
-  console.log(`listening on ${HOST} at ${PORT}`)
+  try {
+    console.log(`listening on ${HOST} at ${PORT}`)
+  } catch (error) {
+    console.error(`server error: ${error}`)
+  }
 })
 
 
