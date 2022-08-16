@@ -16,6 +16,7 @@ const Express = require('express'),
 
 app.use(cors())
 app.use(Express.json())
+
 app.use("/api/auth/", auth)
 app.use("/api/wines/", wines)
 
